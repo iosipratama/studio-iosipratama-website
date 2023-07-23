@@ -1,0 +1,21 @@
+name: Github Action Deployer
+on: [push]
+jobs:
+  deploy-to-server:
+    name: Github Action Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@master
+      env:
+        PASSWORD: ${{ secrets.PASSWORD }}
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        port: ${{ secrets.PORT }}
+        envs: PASSWORD
+        script: |
+          cd ~/studio-iosipratama-website
+          git pull origin main
+          echo "$PASSWORD" | sudo -S systemctl reload nginx
