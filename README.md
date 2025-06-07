@@ -1,2 +1,2 @@
 # studio-iosipratama-website
- A landing page for studio
+ A landing page for studio.
