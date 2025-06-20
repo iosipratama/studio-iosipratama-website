@@ -64,8 +64,12 @@ a {
 .subtext {
   color: var(--secondary);
   margin-bottom: 0;
-  font-size: 20px;
-  line-height: 130%;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 208.333% */
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .list {
@@ -91,6 +95,7 @@ a {
   margin-bottom: 0;
   font-size: 28px;
   line-height: 130%;
+  font-family: 'PPEditorialNew-Regular', 'SF Pro Text', sans-serif;
 }
 
 .paragraph.link {
@@ -167,6 +172,12 @@ a {
   }
 }
 
+@font-face {
+  font-family: 'PPEditorialNew-Regular';
+  src: url('../fonts/PPEditorialNew-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'SF Pro Text';
