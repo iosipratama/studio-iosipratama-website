@@ -1,0 +1,27 @@
+{
+  "name": "studio-iosipratama-website",
+  "version": "1.0.0",
+  "description": "A landing page for studio.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "npx tailwindcss -i ./tailwind.css -o ./dist/output.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iosipratama/studio-iosipratama-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/iosipratama/studio-iosipratama-website/issues"
+  },
+  "homepage": "https://github.com/iosipratama/studio-iosipratama-website#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11"
+  }
+}
