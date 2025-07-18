@@ -14,28 +14,30 @@
   <meta content="summary_large_image" name="twitter:card">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="dist/output.css" rel="stylesheet">
+  <link href="css/theme.css" rel="stylesheet">
   <link href="images/favicon.png" rel="shortcut icon" type="image/x-icon">
   <link href="images/webclip.png" rel="apple-touch-icon">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="flex items-center justify-center">
-  <div class="max-w-2xl w-full mx-auto mt-24 p-8 rounded-xl bg-white/80 animate-fadeIn">
+<body class="flex items-center justify-center" style="background: var(--bg); color: var(--fg);">
+  <div class="max-w-2xl w-full mx-auto mt-24 p-8 rounded-xl animate-fadeIn" style="background: var(--card-bg);">
     <img src="images/computer.png" alt="computer" class="h-[100px] mb-8" />
       <div class="flex items-center gap-2 animate-fadeIn mb-2">
-        <span class="text-base font-semibold tracking-tight opacity-60">Studio</span>
-        <img src="images/iosipratama.svg" alt="Iosi Pratama Logo" class="h-8 align-middle" />
+        <span class="text-base font-semibold tracking-tight" style="opacity: 0.6; color: var(--fg-muted);">Studio</span>
+        <img src="images/iosipratama.svg" alt="Iosi Pratama Logo" class="h-8 align-middle logo-light" />
+        <img src="images/iosipratama-dark.svg" alt="Iosi Pratama Logo Dark" class="h-8 align-middle logo-dark" />
       </div>
-      <p class="text-[28px] animate-fadeIn delay-100 mb-8" style="font-family: 'PPEditorialNew-Regular', serif;">a small studio making <span id="animated-word" style="border-right: 2px solid #222; padding-right:2px;"></span><span style="font-style: italic; opacity: 0.2;"> that feel right.</span> 🍃</p>
+      <p class="text-[28px] animate-fadeIn delay-100 mb-8" style="font-family: 'PPEditorialNew-Regular', serif; color: var(--fg);">a small studio making <span id="animated-word" style="border-right: 2px solid; border-color: var(--fg); padding-right:2px;"></span><span style="font-style: italic; opacity: 0.2; color: var(--fg-light);"> that feel right.</span> 🍃</p>
       <div class="mb-1 animate-fadeIn delay-200">
-        <div class="uppercase text-xs opacity-40 font-bold tracking-wider mb-2">Links</div>
+        <div class="uppercase text-xs font-bold tracking-wider mb-2" style="opacity: 0.4; color: var(--fg-light);">Links</div>
         <div class="text-base mb-8">
-          <a href="https://iosipratama.notion.site/Work-at-Studio-Iosi-Pratama-Career-Page-091d862d65c34aa68af86571e6733815" target="_blank" class="text-xl opacity-60 hover:opacity-100 transition-colors" style="font-family: 'PPEditorialNew-Regular', serif;">Careers</a>
+          <a href="https://iosipratama.notion.site/Work-at-Studio-Iosi-Pratama-Career-Page-091d862d65c34aa68af86571e6733815" target="_blank" class="text-xl link-muted">Careers</a>
         </div>
       </div>
       <div class="animate-fadeIn delay-300">
-        <p class="text-base opacity-40 mb-1">© 2023 PT Studio Iosi Pratama</p>
-        <a href="https://www.linkedin.com/company/studio-iosi-pratama/?viewAsMember=true" target="_blank" class="text-base opacity-40 hover:opacity-60 transition-colors">Linkedin</a>
+        <p class="text-base mb-1" style="opacity: 0.4; color: var(--fg-light);">© 2023 PT Studio Iosi Pratama</p>
+        <a href="https://www.linkedin.com/company/studio-iosi-pratama/?viewAsMember=true" target="_blank" class="text-base hover:opacity-60 transition-colors" style="opacity: 0.4; color: var(--fg-light);">Linkedin</a>
       </div>
     
   </div>

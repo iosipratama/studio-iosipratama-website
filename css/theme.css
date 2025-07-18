@@ -1,0 +1,31 @@
+:root {
+  --bg: #fff;
+  --card-bg: rgba(255,255,255,0.8);
+  --fg: rgba(0,0,0,0.9);
+  --fg-muted: rgba(0,0,0,0.6);
+  --fg-light: rgba(0,0,0,0.4);
+}
+.logo-dark { display: none; }
+.logo-light { display: inline; }
+
+.link-muted {
+  opacity: 0.6;
+  color: var(--fg-muted);
+  font-family: 'PPEditorialNew-Regular', serif;
+  transition: opacity 0.2s;
+}
+.link-muted:hover {
+  opacity: 1;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #18181b;
+    --card-bg: rgba(24,24,27,0.85);
+    --fg: rgba(255,255,255,0.95);
+    --fg-muted: rgba(255,255,255,0.7);
+    --fg-light: rgba(255,255,255,0.8);
+  }
+  .logo-dark { display: inline; }
+  .logo-light { display: none; }
+} 
